@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.NorwegianSchoolOfLogBuilding" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets">
-  <name>NorwegianSchoolOfLogBuilding</name>
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="NorwegianSchoolOfLogBuildingZeroPointLogbuilding" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>Zero Point Logbuilding</name>
   <description>Instructional video describing zero point log building with wall logs blending traditional Norwegian log building with modern tools and techniques.  
 
 Special attention is made using a new scribe tool with pressurized ink cartrages, allowing the log builder to scribe in any direction, greatly increasing the accuracy of the scribe lines, as well as increasing build productivity.
@@ -12,9 +12,9 @@ Additional educational videos can be purchased on DVDs at http://www.norsklaftes
 In addition to English, videos are also available in Norwegian.  Russian as well as French sub titles are also available.  These are currently only available for purchase as DVDs on the web shop.
 
 (c) 2015 All rights reserved George Fuller</description>
-  <author href="http://cordova.io" email="dev@cordova.apache.org">Norsk Lafteskole</author>
+  <author href="http://www.norsklafteskole.no/" email="andrew@sandsconsulting.no">Norsk Lafteskole</author>
   <content src="index.html" />
-  <access origin="www.youtube.com" />
+  <access origin="youtube.com" />
   <access origin="vjs.zencdn.net" />
   <preference name="SplashScreen" value="screen" />
   <preference name="windows-target-version" value="8.1" />
@@ -24,7 +24,7 @@ In addition to English, videos are also available in Norwegian.  Russian as well
   <preference name="InAppBrowserStorageEnabled" value="False" />
   <preference name="BackupWebStorage" value="none" />
   <vs:platformSpecificValues>
-    <vs:platformSpecificWidget platformName="windows" version="1.0.0.0">
+    <vs:platformSpecificWidget platformName="windows" id="NorwegianSchoolOfLogBuildingZeroPointLogbuilding" version="1.0.0.0">
       <vs:name>Norwegian School of Logbuilding - Zero Point Logbuilding</vs:name>
     </vs:platformSpecificWidget>
   </vs:platformSpecificValues>
