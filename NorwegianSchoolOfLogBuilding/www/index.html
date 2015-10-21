@@ -1,12 +1,20 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="min-height: 100%">
 <head>
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';">
     <link href="css/index.css" rel="stylesheet" />
 </head>
-<body>
-    <button id="openPlayer" onclick="OpenStreamingPlayer()">Stream video</button>
-    <button id="downloadVideo" onclick="">Download video</button>
+<body id="indexBody" style="background-image: url('images/ApplicationIcon.png');
+                                     background-repeat: no-repeat;
+                                     background-position: right bottom;">
+
+<div style="width: 100%; height: 50px">
+    <button id="openPlayer" style="width: 100%; height: 100%" onclick="OpenStreamingPlayer()">Stream video</button>
+</div>
+<div style="height: 25px"></div>
+    <div style="width: 100%; height:50px">
+        <button id="downloadVideo" style="width: 100%; height:100%" onclick="">Download video</button>
+    </div>
 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
