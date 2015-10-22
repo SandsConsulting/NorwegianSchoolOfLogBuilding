@@ -121,6 +121,9 @@ In addition to English, videos are also available in Norwegian.  Russian as well
       <vs:name>Norwegian School Of LogBuilding</vs:name>
     </vs:platformSpecificWidget>
   </vs:platformSpecificValues>
-  <preference name="KeepRunning" value="False" />
+  <preference name="KeepRunning" value="True" />
   <preference name="AndroidLaunchMode" value="singleInstance" />
+  <preference name="ShowTitle" value="True" />
+  <preference name="InAppBrowserStorageEnabled" value="True" />
+  <preference name="SuppressesIncrementalRendering" value="True" />
 </widget>
