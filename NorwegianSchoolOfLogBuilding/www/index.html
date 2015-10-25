@@ -7,19 +7,6 @@
     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body id="indexBody" style="background-image: url('images/ApplicationIcon.png'); background-repeat: no-repeat; background-position: right bottom;">
-
-    <!--<div style="width: 100%; height: 50px">
-        <button id="openAzurePlayer" style="width: 100%; height: 100%" onclick="OpenStreamingPlayer('azuremediaplayer')">Azure stream video</button>
-    </div>-->
-    <!--<div style="height: 25px"></div>-->
-    <!--<div style="width: 100%; height: 50px">
-        <button id="openFallbackPlayer" style="width: 100%; height: 100%" onclick="OpenStreamingPlayer()">Fallback stream video</button>
-    </div>-->
-    <!--<div style="height: 25px"></div>-->
-    <!--<div style="width: 100%; height:50px">
-        <button id="downloadVideo" style="width: 100%; height:100%" onclick="">Download video</button>
-    </div>-->
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -37,7 +24,7 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#" onclick="OpenStreamingPlayer('azuremediaplayer')">Wall Logs</a>
-                        <a href="#" onclick="Download()">Wall Logs (download)</a>
+                        <!--<a href="#" onclick="Download()">Wall Logs (download)</a>-->
                         <a href="#" onclick="OpenStreamingPlayer()">Wall Logs (fallback)</a>
                     </li>
                 </ul>
@@ -46,6 +33,11 @@
     </nav>
     <div id="videoArea"></div>
 
+    <button class="btn">Intro</button>
+    <button class="btn">Chapter 1</button>
+    <button class="btn">Chapter 2</button>
+    <button class="btn">Chapter 3</button>
+    
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
