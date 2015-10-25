@@ -1,5 +1,21 @@
 {
-    "name": "NorwegianSchoolOfLogBuilding",
-    "dependencies": {
-    }
+  "name": "NorwegianSchoolOfLogBuilding",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  },
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/SandsConsulting/NorwegianSchoolOfLogBuilding",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Andrew Sands <andrew@sandsconsulting.no>"
+  ]
 }
