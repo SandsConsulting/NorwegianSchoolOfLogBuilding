@@ -126,4 +126,5 @@ In addition to English, videos are also available in Norwegian.  Russian as well
   <preference name="ShowTitle" value="True" />
   <preference name="InAppBrowserStorageEnabled" value="True" />
   <preference name="SuppressesIncrementalRendering" value="True" />
+  <preference name="BackupWebStorage" value="local" />
 </widget>
