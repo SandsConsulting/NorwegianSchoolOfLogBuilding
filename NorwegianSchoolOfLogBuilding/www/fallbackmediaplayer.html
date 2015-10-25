@@ -1,20 +1,18 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />-->
-    <!--<meta name="apple-mobile-web-app-capable" content="yes" />-->
-    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black"/>-->
-
     <meta charset="utf-8" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';">
 </head>
-<body style="background-color: grey">
-<iframe id="video"src="https://www.youtube.com/embed/suNDsoKyx4U?autoplay=1"></iframe>
+<body style="background-color: grey; padding: 0 0 0 0; margin: 0 0 0 0">
+<iframe id="youtube"src="https://www.youtube.com/embed/suNDsoKyx4U?autoplay=1"></iframe>
 <script>
     var fullScreen = function () {
-        var video = document.getElementById('video');
+        var video = document.getElementById('youtube');
         video.style.minWidth = window.innerWidth + 'px';
         video.style.minHeight = window.innerHeight + 'px';
+        video.style.padding = 0;
+        video.style.margin = 0;
     }
     fullScreen();
 </script>
