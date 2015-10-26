@@ -33,10 +33,10 @@
     </nav>
     <div id="videoArea"></div>
 
-    <button class="btn">Intro</button>
-    <button class="btn">Chapter 1</button>
-    <button class="btn">Chapter 2</button>
-    <button class="btn">Chapter 3</button>
+    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 0)">Intro</button>
+    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 120)">Chapter 1</button>
+    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 200)">Chapter 2</button>
+    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 220)">Chapter 3</button>
     
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
@@ -48,16 +48,20 @@
     <script src="scripts/index.js"></script>
 
     <script>
-        function OpenStreamingPlayer(streamLocation) {
+        function OpenStreamingPlayer(streamLocation, startTime) {
             if (streamLocation === 'azuremediaplayer') {
-                window.location = "amp.html";
+                if (startTime) {
+                    window.location = "amp.html?startTime=" + startTime;
+                } else {
+                    window.location = "amp.html";
+                }
             } else {
                 window.location = 'fallbackmediaplayer.html';
             }
         }
 
         function Download() {
-
+            // todo
         }
     </script>
 </body>
