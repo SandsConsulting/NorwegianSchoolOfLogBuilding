@@ -31,13 +31,23 @@
             </div>
         </div>
     </nav>
-    <div id="videoArea"></div>
+    <div class="container-fluid" style="height: 100%">
+        <div class="row">
+            <div class="col-xs-3">
+                <button class="btn btn-lg" style="width:100%" onclick="OpenStreamingPlayer('azuremediaplayer', 0)">Intro</button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-lg" style="width:100%" onclick="OpenStreamingPlayer('azuremediaplayer', 120)">Chapter 1</button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-lg" style="width:100%" onclick="OpenStreamingPlayer('azuremediaplayer', 200)">Chapter 2</button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-lg" style="width:100%"  onclick="OpenStreamingPlayer('azuremediaplayer', 220)">Chapter 3</button>
+            </div>
+        </div>
+    </div>
 
-    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 0)">Intro</button>
-    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 120)">Chapter 1</button>
-    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 200)">Chapter 2</button>
-    <button class="btn" onclick="OpenStreamingPlayer('azuremediaplayer', 220)">Chapter 3</button>
-    
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>

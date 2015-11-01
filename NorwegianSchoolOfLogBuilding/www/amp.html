@@ -10,34 +10,32 @@
     <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered vjs-fullscreen" tabindex="0">
         <p class="amp-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
     </video>
-
+    <script src="lib/jquery/dist/jquery.min.js"></script>
     <script>
-        var myPlayer = amp('azuremediaplayer', {
+        $(document).ready(function () {
+            window.amp('azuremediaplayer', {
                 "nativeControlsForTouch": false,
                 autoplay: true,
                 controls: true,
                 logo: { enabled: false }
             },
-            function () {
+                function () {
+                    this.src([
+                        {
+                            src: 'http://norsklafteskole.streaming.mediaservices.windows.net/dbb53d6f-0e5c-40f3-9ddf-0f9069524eca/Dvdwalllog1.ism/Manifest',
+                            type: "application/vnd.ms-sstr+xml"
+                        }
+                    ]);
 
-                this.addEventListener('play', startTime);
-
-                this.src([
-                    {
-                        src: 'http://norsklafteskole.streaming.mediaservices.windows.net/dbb53d6f-0e5c-40f3-9ddf-0f9069524eca/Dvdwalllog1.ism/Manifest',
-                        type: "application/vnd.ms-sstr+xml"
-                    }
-                ]);
-            });
-
-        var startTime = function () {
-            var start = window.location.search.split('startTime=')[1];
-            if (start) {
-                myPlayer.currentTime(start);
-            }
-            myPlayer.removeEventListener('play', startTime);
-        }
+                    this.addEventListener('play', function () {
+                        var start = window.location.search.split('startTime=')[1];
+                        if (start) {
+                            this.currentTime(parseFloat(start));
+                            this.removeEventListener('play');
+                        }
+                    });
+                });
+        });
     </script>
 </body>
 </html>
-<!--src: "http://amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest",-->
