@@ -13,6 +13,9 @@
         video.style.minHeight = window.innerHeight + 'px';
         video.style.padding = 0;
         video.style.margin = 0;
+        video.src = video.src + '&start=' + window.location.search.split('start=')[1];
+
+        console.log(video.src);
     }
     fullScreen();
 </script>
